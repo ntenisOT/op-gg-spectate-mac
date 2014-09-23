@@ -1,0 +1,39 @@
+/* Background picture */
+
+img.bg {
+    /* Set rules to fill background */
+    min-height: 100%;
+    min-width: 1024px;
+
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: auto;
+
+    /* Set up positioning */
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+@media screen and (max-width: 1024px) {
+    /* Specific to this particular image */
+    img.bg {
+        left: 50%;
+        margin-left: -512px; /* 50% */
+    }
+}
+
+/* Page wrap */
+#page-wrap {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width:34em;
+    height:6em;
+    margin-top: -6em; /*set to a negative number 1/2 of your height*/
+    margin-left: -17em; /*set to a negative number 1/2 of your width*/
+    padding: 10px;
+    -moz-box-shadow: 0 0 20px black;
+    -webkit-box-shadow: 0 0 20px black;
+    box-shadow: 0 0 20px black;
+}
