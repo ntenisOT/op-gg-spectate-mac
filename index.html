@@ -2,7 +2,12 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title></title>
+    <title>OP.GG Spectate feature for Mac</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <link href="css/fileinput.css" rel="stylesheet">
+    <script src="js/fileinput.js"></script>
 
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
 
@@ -11,13 +16,22 @@
 
 <img src="images/victorious.jpg" class="bg">
 
-<input type="file" id="files" name="file"/> Read bytes:
-<span class="readBytesButtons">
-  <button onclick="readBlob();">entire file</button>
-</span>
+<div id="main">
 
-<div id="byte_range"></div>
-<div id="byte_content"></div>
+    <div id="upload-wrap">
+
+        <input type="file" id="files" name="file"/>
+
+    </div>
+
+    <div id="code-wrap">
+
+        <div id="message_content">
+            <b>The command will be available here!</b>
+        </div>
+
+    </div>
+</div>
 
 <script type="text/javascript" src="js/script.js"></script>
 

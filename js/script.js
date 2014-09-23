@@ -26,10 +26,43 @@ function readBlob() {
             var regExp = /"spectator.*"/g;
             var match = regExp.exec(text);
 
-            document.getElementById('byte_content').textContent = str + match[0];
+            if(match === null) {
+                alert('File not supported! Please select another file.')
+            }
+
+            var parent = document.getElementById('code-wrap');
+
+            parent.innerHTML = "";
+
+            var el = document.createElement('div');
+            el.id = 'byte_content';
+            el.innerHTML = '<b>Please Copy and Paste in your Terminal (Application - Utilities - Terminal) the following:</b></br></br>';
+
+            el.innerHTML  = el.innerHTML  +  str + match[0];
+
+            parent.appendChild(el);
+
         }
     };
 
     var blob = file.slice(start, stop + 1);
     reader.readAsBinaryString(blob);
 }
+
+$("#files").fileinput({'showPreview': false, 'uploadLabel': 'Submit', 'maxFileCount': 1});
+
+$(".kv-fileinput-upload").on("click", function() {
+    readBlob();
+});
+
+$("#files").on('fileclear', function(event) {
+    var parent = document.getElementById('code-wrap');
+
+    parent.innerHTML = "";
+
+    var el = document.createElement('div');
+    el.id = 'message_content';
+
+    el.innerHTML = '<b>The command will be available here!</b>';
+    parent.appendChild(el);
+});

@@ -23,17 +23,38 @@ img.bg {
     }
 }
 
+/* Main css*/
+#main {
+    width: 100%;
+}
+
 /* Page wrap */
-#page-wrap {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    width:34em;
-    height:6em;
-    margin-top: -6em; /*set to a negative number 1/2 of your height*/
-    margin-left: -17em; /*set to a negative number 1/2 of your width*/
+#upload-wrap {
+    position: relative;
+    width: 1000px;
+    display: table;
+    margin: 50px auto;
     padding: 10px;
     -moz-box-shadow: 0 0 20px black;
     -webkit-box-shadow: 0 0 20px black;
     box-shadow: 0 0 20px black;
+}
+
+/* Code wrap */
+#code-wrap {
+    position: relative;
+    width: 1000px;
+    display: table;
+    margin: 0px auto;
+    padding: 10px;
+    -moz-box-shadow: 0 0 20px black;
+    -webkit-box-shadow: 0 0 20px black;
+    box-shadow: 0 0 20px black;
+    background: black;
+    color: white;
+}
+
+#message_content {
+    text-align: center;
+    vertical-align: middle;
 }
