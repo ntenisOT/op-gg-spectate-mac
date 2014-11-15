@@ -1,0 +1,60 @@
+/* Background picture */
+
+img.bg {
+    /* Set rules to fill background */
+    min-height: 100%;
+    min-width: 1024px;
+
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: auto;
+
+    /* Set up positioning */
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+@media screen and (max-width: 1024px) {
+    /* Specific to this particular image */
+    img.bg {
+        left: 50%;
+        margin-left: -512px; /* 50% */
+    }
+}
+
+/* Main css*/
+#main {
+    width: 100%;
+}
+
+/* Page wrap */
+#upload-wrap {
+    position: relative;
+    width: 1000px;
+    display: table;
+    margin: 50px auto;
+    padding: 10px;
+    -moz-box-shadow: 0 0 20px black;
+    -webkit-box-shadow: 0 0 20px black;
+    box-shadow: 0 0 20px black;
+}
+
+/* Code wrap */
+#code-wrap {
+    position: relative;
+    width: 1000px;
+    display: table;
+    margin: 0px auto;
+    padding: 10px;
+    -moz-box-shadow: 0 0 20px black;
+    -webkit-box-shadow: 0 0 20px black;
+    box-shadow: 0 0 20px black;
+    background: black;
+    color: white;
+}
+
+#message_content {
+    text-align: center;
+    vertical-align: middle;
+}
