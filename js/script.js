@@ -4,7 +4,7 @@
 
 function readBlob() {
 
-    var str = 'chmod +x "/Applications/League of Legends.app/Contents/LoL/RADS/solutions/lol_game_client_sln/releases/0.0.0.143/deploy/LeagueOfLegends.app/Contents/MacOS/LeagueofLegends" && cd "/Applications/League of Legends.app/Contents/LoL/RADS/solutions/lol_game_client_sln/releases/0.0.0.143/deploy/LeagueOfLegends.app/Contents/MacOS" && riot_launched=true "/Applications/League of Legends.app/Contents/LoL/RADS/solutions/lol_game_client_sln/releases/0.0.0.143/deploy/LeagueOfLegends.app/Contents/MacOS/LeagueofLegends" 8394 LoLLauncher "/Applications/League of Legends.app/Contents/LoL/RADS/projects/lol_air_client/releases/0.0.0.143/deploy/bin/LolClient" ';
+    var str = 'chmod +x "/Applications/League of Legends.app/Contents/LoL/RADS/solutions/lol_game_client_sln/releases/0.0.0.150/deploy/LeagueOfLegends.app/Contents/MacOS/LeagueofLegends" && cd "/Applications/League of Legends.app/Contents/LoL/RADS/solutions/lol_game_client_sln/releases/0.0.0.150/deploy/LeagueOfLegends.app/Contents/MacOS" && riot_launched=true "/Applications/League of Legends.app/Contents/LoL/RADS/solutions/lol_game_client_sln/releases/0.0.0.150/deploy/LeagueOfLegends.app/Contents/MacOS/LeagueofLegends" 8394 LoLLauncher "/Applications/League of Legends.app/Contents/LoL/RADS/projects/lol_air_client/releases/0.0.0.150/deploy/bin/LolClient" ';
 
 
     var files = document.getElementById('files').files;
